@@ -147,7 +147,25 @@ main {
   transform: translate(0px, 10px);
 }
 
-.githubLink {
+#flexConteinerGithub {
+  display: flex;
+  flex-flow: row nowrap;
+  align-content: center;
+  justify-content: space-evenly;
+}
+
+.githubinfo .githubimg {
+  margin-top: 5px;
+  width: 350px;
+  height: 400px;
+  filter: blur(3px);
+}
+.githubinfo .workinprogress {
+  margin-top: 5px;
+  width: 350px;
+  height: 400px;
+}
+.githubinfo .githubLink {
   font-size: 35px;
 }
 
