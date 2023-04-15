@@ -18,11 +18,12 @@ nav {
   background-color: rgb(2, 0, 65);
   background-size: cover;
   height: 90px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  position: sticky;
+  position: fixed;
   grid-area: navbar;
 }
 nav .logotipo {
