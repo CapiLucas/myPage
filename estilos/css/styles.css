@@ -203,6 +203,11 @@ footer ul li a {
     font-size: 30px;
   }
 }
+@media (maxg-width: 1024px) {
+  .principal {
+    margin-top: 90px;
+  }
+}
 @media (max-width: 425px) {
   #githubinfo .githubimg {
     width: 150px;
