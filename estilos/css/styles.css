@@ -38,6 +38,9 @@ header .logo img {
   height: 70px;
   width: 70px;
 }
+header nav {
+  font-size: large;
+}
 
 h1, h2 {
   text-align: center;
