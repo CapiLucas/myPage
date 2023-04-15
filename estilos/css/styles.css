@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: rgb(23, 23, 83);
+}
+
 ul {
   list-style: none;
   margin: 0;
@@ -74,6 +78,68 @@ h1, h2 {
   box-shadow: 0px 0px 10px 7px white;
 }
 
+section {
+  text-align: center;
+}
+section h1 {
+  margin-top: 50px;
+}
+section span {
+  text-align: center;
+  color: white;
+}
+
+main {
+  grid-area: main;
+}
+
+#gridContainer {
+  display: grid;
+  margin: 0;
+  position: relative;
+  grid-template-areas: "navbar navbar navbar" "main main main " "footer footer footer";
+  grid-template-rows: auto 1fr auto;
+  min-width: 100vh;
+}
+#gridContainer h1 span {
+  transition: 0.5s;
+}
+#gridContainer h1 span:hover {
+  font-size: 72px;
+}
+
+.imagenes {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+}
+.imagenes img {
+  width: 170px;
+  height: 250px;
+}
+
+#flexConteinerGithub {
+  display: flex;
+  flex-flow: row nowrap;
+  align-content: center;
+  justify-content: space-evenly;
+}
+
+#githubinfo .githubimg {
+  margin-top: 5px;
+  width: 350px;
+  height: 400px;
+  filter: blur(3px);
+}
+#githubinfo .workinprogress {
+  margin-top: 5px;
+  width: 350px;
+  height: 400px;
+}
+#githubinfo .githubLink {
+  font-size: 35px;
+}
+
 .info-section {
   text-align: justify;
   margin: 0 auto;
@@ -117,69 +183,6 @@ footer ul li {
 }
 footer ul li a {
   color: #362eaf;
-}
-
-section {
-  text-align: center;
-}
-section h1 {
-  margin-top: 50px;
-}
-section span {
-  text-align: center;
-  color: white;
-}
-
-main {
-  grid-area: main;
-}
-
-#gridContainer {
-  display: grid;
-  background-color: rgb(23, 23, 83);
-  margin: 0;
-  position: relative;
-  min-height: 100vh;
-  grid-template-areas: "navbar navbar navbar" "main main main " "footer footer footer";
-  grid-template-rows: auto 1fr auto;
-}
-#gridContainer h1 span {
-  transition: 0.5s;
-}
-#gridContainer h1 span:hover {
-  font-size: 72px;
-}
-
-.imagenes {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-evenly;
-}
-.imagenes img {
-  width: 170px;
-  height: 250px;
-}
-
-#flexConteinerGithub {
-  display: flex;
-  flex-flow: row nowrap;
-  align-content: center;
-  justify-content: space-evenly;
-}
-
-#githubinfo .githubimg {
-  margin-top: 5px;
-  width: 350px;
-  height: 400px;
-  filter: blur(3px);
-}
-#githubinfo .workinprogress {
-  margin-top: 5px;
-  width: 350px;
-  height: 400px;
-}
-#githubinfo .githubLink {
-  font-size: 35px;
 }
 
 @media (min-width: 1280px) {
