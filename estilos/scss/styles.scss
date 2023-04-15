@@ -49,7 +49,7 @@ h1, h2{
     text-align: center;
     color: white;
 }
-.principalInformation{
+.principal{
 	background-image: url(../../images/rm251-mind-11-g.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -67,6 +67,30 @@ h1, h2{
 	img:hover{
 		border: 3px solid white;
 		box-shadow: 0px 0px 10px 7px white;
+	}
+}
+.info-section{
+	text-align: justify;
+	margin: 0 auto;
+	margin-top: 20px;
+	width: 80vh;
+	height: 55vh;
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	justify-content: center;
+	justify-items: center;
+	.me{
+		margin-left: 25px;
+		width: 350px;
+		border: 4px solid aqua;
+	}
+	.download-CV{
+		padding: 10px 20px;
+		background-color: aqua;
+		border: none;
+		border-radius: 20px;
+		margin-top: 5px;
+		cursor: pointer;
 	}
 }
 footer{
@@ -97,14 +121,13 @@ section{
 		text-align: center;
 		color: white;
 	}
-
 }
 main{
 	grid-area: main;
 }
 #gridContainer{
     display: grid;
-    background-color:rgb(1, 0,68);
+    background-color:rgb(23, 23, 83);
 	margin: 0;
 	position: relative;
 	min-height: 100vh;
@@ -120,27 +143,17 @@ main{
 		span:hover{
 			font-size: 72px;
 		}
+		
 	}
 }
 .imagenes{
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-evenly;
-	margin-top: 15px;
 	img{
 		width: 170px;
 		height: 250px;
 	}  
-}
-.proximamente{
-	margin-top: 2px;
-	margin-bottom: 5px;
-	width: 70px;
-	height: 40px;
-	transition: 0.5s;
-	&:hover{
-		transform: translate(0px,10px);
-	}
 }
 #flexConteinerGithub{
 	display: flex;
@@ -148,7 +161,7 @@ main{
 	align-content: center;
 	justify-content: space-evenly;
 }
-.githubinfo{
+#githubinfo{
 	.githubimg{
 		margin-top: 5px;
 		width: 350px;
@@ -188,4 +201,28 @@ main{
 		}
 	}
 
+}
+@media (max-width:425px){
+	#githubinfo{
+		.githubimg{
+			width: 150px;
+			height: 180px;
+		}
+		.workinprogress{
+			width: 150px;
+			height: 180px;
+		}
+	}
+	.info-section{
+		.me{
+			margin-left: 10px;
+			width: 250px;
+
+		}
+	}
+}
+@media (max-width:344px){
+	.info-section{
+		width: 70vh;
+	}
 }
