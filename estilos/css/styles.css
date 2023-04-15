@@ -8,15 +8,16 @@ body {
   background-color: rgb(23, 23, 83);
 }
 
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+section h1 span {
+  transition: 0.5s;
+}
+section h1 span:hover {
+  font-size: 72px;
 }
 
-nav {
+header {
   background-color: rgb(2, 0, 65);
-  background-size: cover;
+  top: 0px;
   height: 90px;
   width: 100%;
   display: flex;
@@ -24,38 +25,27 @@ nav {
   align-items: center;
   padding: 0 20px;
   position: fixed;
-  grid-area: navbar;
 }
-nav .logotipo {
+header a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+header .logo {
+  display: flex;
+}
+header .logo img {
   height: 70px;
   width: 70px;
-}
-nav i {
-  margin-right: 5px;
-}
-nav li {
-  display: inline-block;
-  margin-right: 20px;
-}
-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 18px;
-  transition: all 0.3s ease;
-  text-decoration: none;
-  font-family: "Press Start 2P";
-  font-size: 20px;
-  transition: all 0.3s ease;
-}
-nav a:hover {
-  color: #f2c10f;
-  transform: scale(1.1);
 }
 
 h1, h2 {
   text-align: center;
   color: white;
+}
+
+#mainGridContainer {
+  width: 100%;
 }
 
 .principal {
@@ -64,11 +54,14 @@ h1, h2 {
   background-size: cover;
   width: 100%;
   height: 500px;
+  margin-top: 90px;
   text-align: center;
 }
 .principal img {
-  width: 300px;
-  height: 300px;
+  min-width: 150px;
+  min-height: 150px;
+  max-width: 300px;
+  max-height: 300px;
   margin-top: 15px;
   border-radius: 50%;
   border: 3px solid black;
@@ -90,25 +83,6 @@ section span {
   color: white;
 }
 
-main {
-  grid-area: main;
-}
-
-#gridContainer {
-  display: grid;
-  margin: 0;
-  position: relative;
-  grid-template-areas: "navbar navbar navbar" "main main main " "footer footer footer";
-  grid-template-rows: auto 1fr auto;
-  min-width: 100vh;
-}
-#gridContainer h1 span {
-  transition: 0.5s;
-}
-#gridContainer h1 span:hover {
-  font-size: 72px;
-}
-
 .imagenes {
   display: flex;
   flex-flow: row nowrap;
@@ -126,38 +100,50 @@ main {
   justify-content: space-evenly;
 }
 
+#githubinfo {
+  width: 100%;
+}
 #githubinfo .githubimg {
   margin-top: 5px;
-  width: 350px;
-  height: 400px;
+  min-width: 60px;
+  min-height: 90px;
+  max-width: 350px;
+  max-height: 400px;
   filter: blur(3px);
 }
 #githubinfo .workinprogress {
   margin-top: 5px;
-  width: 350px;
-  height: 400px;
+  min-width: 60px;
+  min-height: 90px;
+  max-width: 350px;
+  max-height: 400px;
 }
 #githubinfo .githubLink {
   font-size: 35px;
 }
 
 .info-section {
+  width: 100%;
+  height: 500px;
+}
+.info-section .info-space {
+  width: 70vh;
+  height: 55vh;
   text-align: justify;
   margin: 0 auto;
   margin-top: 20px;
-  width: 80vh;
-  height: 55vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   justify-items: center;
+  align-items: center;
 }
-.info-section .me {
+.info-section .info-space .me {
   margin-left: 25px;
   width: 350px;
   border: 4px solid aqua;
 }
-.info-section .download-CV {
+.info-section .info-space .download-CV {
   padding: 10px 20px;
   background-color: aqua;
   border: none;
@@ -169,66 +155,120 @@ main {
 footer {
   width: 100%;
   height: 60px;
-  position: absolute;
   background-color: #1c1c1c;
-  grid-area: footer;
-}
-footer ul {
-  height: 60px;
+  bottom: 0px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-footer ul li {
-  display: inline-block;
-  margin-left: 15px;
-}
-footer ul li a {
-  color: #362eaf;
+footer a {
+  margin-right: 15px;
 }
 
-@media (min-width: 1280px) {
-  h1 span {
-    font-size: 55px;
-  }
-  h2 {
-    font-size: 27px;
-  }
-  section h1 {
-    font-size: 40px;
-  }
-  section span {
-    font-size: 22px;
-  }
-  footer ul li {
-    font-size: 30px;
-  }
-}
-@media (maxg-width: 1024px) {
+@media (min-width: 425px) and (max-width: 680px) {
   .principal {
-    margin-top: 90px;
+    width: 100%;
+    height: 300px;
   }
-}
-@media (max-width: 425px) {
-  .principal {
-    margin-top: 90px;
+  .principal h1, .principal span {
+    font-size: 15px;
+  }
+  .principal h2 {
+    font-size: 14px;
+  }
+  .principal img {
+    width: 200px;
+    height: 200px;
+    margin-top: 15px;
+    border-radius: 50%;
+    border: 3px solid black;
+    transition: 0.5s;
+  }
+  .principal img:hover {
+    border: 3px solid white;
+    box-shadow: 0px 0px 10px 7px white;
+  }
+  .info-section {
+    height: 600px;
+  }
+  .info-section .info-space {
+    width: 45vh;
+    height: 55vh;
+  }
+  .info-section .info-space h1, .info-section .info-space span {
+    font-size: 15px;
+  }
+  .info-section .info-space .me {
+    margin-left: 25px;
+    width: 215px;
+    border: 4px solid aqua;
   }
   #githubinfo .githubimg {
-    width: 150px;
-    height: 180px;
+    width: 60px;
+    height: 90px;
   }
   #githubinfo .workinprogress {
-    width: 150px;
-    height: 180px;
+    width: 60px;
+    height: 90px;
   }
   .info-section .me {
     margin-left: 10px;
     width: 250px;
   }
+  .imagenes img {
+    width: 160px;
+    height: 240px;
+  }
 }
-@media (max-width: 344px) {
+@media (min-width: 205px) and (max-width: 424px) {
+  .principal {
+    width: 100%;
+    height: 300px;
+  }
+  .principal h1, .principal span {
+    font-size: 15px;
+  }
+  .principal h2 {
+    font-size: 14px;
+  }
+  .principal img {
+    width: 120px;
+    height: 200px;
+    margin-top: 15px;
+    border-radius: 50%;
+    border: 3px solid black;
+    transition: 0.5s;
+  }
+  .principal img:hover {
+    border: 3px solid white;
+    box-shadow: 0px 0px 10px 7px white;
+  }
   .info-section {
-    width: 70vh;
+    height: 450px;
+  }
+  .info-section .info-space {
+    width: 45vh;
+    height: 55vh;
+  }
+  .info-section .info-space h1, .info-section .info-space span {
+    font-size: 8px;
+  }
+  .info-section .info-space .me {
+    margin-left: 5px;
+    width: 160px;
+    border: 4px solid aqua;
+  }
+  .imagenes img {
+    width: 100px;
+    height: 150px;
+  }
+  #githubinfo .githubimg {
+    width: 60px;
+    height: 90px;
+  }
+  #githubinfo .workinprogress {
+    width: 60px;
+    height: 90px;
   }
 }
 

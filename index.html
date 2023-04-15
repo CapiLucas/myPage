@@ -7,27 +7,29 @@
     <link rel="stylesheet" href="./estilos/css/styles.css">
     <script src="https://kit.fontawesome.com/2ac8ba4401.js" crossorigin="anonymous"></script>
     <title>Project Initial</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
-    <section id="gridContainer">
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="./images/logo sin fondo.png" alt="logo"></a>
+        </div>
         <nav class="navbar">
-            <a class="linklogo" href="index.html"><img class="logotipo" src="./images/logo sin fondo.png" alt="logo"></a>
-            <ul>
-              <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-              <li><a href="#githubinfo"><i class="fa-brands fa-github"></i> Github</a></li>
-              <li><a href="https://www.linkedin.com/in/lucas-torres-041057248/" target="_blank"><i class="fa-brands fa-linkedin"></i> Linkedin</a></li>
-              <li><a href="./pages/contact-page.html"><i class="fas fa-envelope"></i> Contact</a></li>
-            </ul>
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="#githubinfo"><i class="fa-brands fa-github"></i> Github</a>
+            <a href="https://www.linkedin.com/in/lucas-torres-041057248/" target="_blank"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
+            <a href="./pages/contact-page.html"><i class="fas fa-envelope"></i> Contact</a>
         </nav>
-        <main>
-            <div class="principal">
-                <h1><span>HI I´M</span><span style="color: red;"> LUCAS TORRES</span></h1>
-                <h2>I am a web developer who is opening doors in this world</h2>
-                <img src="./images/Perfil.jpeg" alt="foto de perfil">
-            </div>
-    
-            <section class="info-section">
+    </header>
+
+
+    <main id="mainGridContainer">
+        <div class="principal">
+            <h1><span>HI I´M</span><span style="color: red;"> LUCAS TORRES</span></h1>
+            <h2>I am a web developer who is opening doors in this world</h2>
+            <img src="./images/Perfil.jpeg" alt="foto de perfil">
+        </div>
+        <section class="info-section">
+            <div class="info-space">
                 <div class="info-content" >
                     <h1>about me:</h1>
                     <span>I am a development and programming enthusiast, since I was 16 years old that interests me, I am in constant training and passionate about creating innovative solutions. I acquired multiple skills among which teamwork and customer orientation stand out. I look forward to applying this experience to bring life to your projects.</span>
@@ -38,34 +40,29 @@
                     </a>
                 </div>
                 <img class="me" src="./images/me.png" alt="LucasTorres-Picture">
-            </section>
+            </div>
+        </section>
+
+        <section class="imagenes">
+            <div><img src="./images/html5.png" alt="html5"></div>
+            <div><img src="./images/css.png" alt="css"></div>
+        </section>
+
+        <section id="githubinfo">
+            <a href="https://github.com/CapiLucas"><h1><span class="githubLink" style="color: gray;">GITHUB</span></h1></a>
+            <span>This is my Github where I upload my current projects.</span>
+            <div id="flexConteinerGithub">
+                <div><a href="http://artorius.rf.gd/index.html" target="_blank"><img class="githubimg" src="./images/artorius.png" alt="artorius"></a></div>
+                <div><img class="workinprogress" src="./images/inprogress.png" alt="in progress"></div>
+                <div><img class="workinprogress" src="./images/inprogress.png" alt="in progress"></div>
+            </div>
+        </section>
+    </main>
+
     
-            <section class="imagenes">
-                <div><img class="animate__animated animate__fadeInTopLeft animate__delay-3s" src="./images/html5.png" alt="html5"></div>
-                <div><img class="animate__animated animate__fadeInTopRight animate__delay-3s" src="./images/css.png" alt="css"></div>
-            </section>
-    
-            <section id="githubinfo">
-                <a href="https://github.com/CapiLucas"><h1><span class="githubLink" style="color: gray;">GITHUB</span></h1></a>
-                <span>This is my Github where I upload my current projects.</span>
-                <div id="flexConteinerGithub">
-                    <div><a href="http://artorius.rf.gd/index.html" target="_blank"><img class="githubimg" src="./images/artorius.png" alt="artorius"></a></div>
-                    <div><img class="workinprogress" src="./images/inprogress.png" alt="in progress"></div>
-                    <div><img class="workinprogress" src="./images/inprogress.png" alt="in progress"></div>
-                </div>
-            </section>
-    
-              <!--<section>
-                <a href="index.html"><img class="proximamente" src="./images/lineas.png" alt="linea"></a>
-            </section>-->
-    
-        </main>
-        <footer>
-            <ul>
-                <li><a href="https://twitter.com/ElCapi07_" target="_blank"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
-                <li><a href="https://www.instagram.com/lucas__torres07/" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
-            </ul>    
-        </footer>
-    </section>
+    <footer>
+        <a href="https://twitter.com/ElCapi07_" target="_blank"><i class="fa-brands fa-twitter"></i> Twitter</a>
+        <a href="https://www.instagram.com/lucas__torres07/" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>    
+    </footer>
 </body>
 </html>
