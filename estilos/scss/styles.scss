@@ -296,3 +296,15 @@ footer{
 		}
 	}
 }
+@media (max-height:730px) and (min-width:690px){
+	.info-section{
+		.info-space{
+			width: 80vh;
+			height: 55vh;
+			h1,span{
+				font-size: 14px;
+			}
+		}
+	}
+}
+

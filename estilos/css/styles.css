@@ -287,5 +287,14 @@ footer a {
     height: 100px;
   }
 }
+@media (max-height: 730px) and (min-width: 690px) {
+  .info-section .info-space {
+    width: 80vh;
+    height: 55vh;
+  }
+  .info-section .info-space h1, .info-section .info-space span {
+    font-size: 14px;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
