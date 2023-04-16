@@ -90,6 +90,7 @@ h1, h2{
 	justify-content: space-evenly;
 }
 #githubinfo{
+	text-align: center;
 	width: 100%;
 	.githubimg{
 		margin-top: 5px;
@@ -109,6 +110,10 @@ h1, h2{
 	}
 	.githubLink{
 		font-size: 35px;
+	}
+	span{
+		color: white;
+		font-size: large;
 	}
 }
 .info-section{
