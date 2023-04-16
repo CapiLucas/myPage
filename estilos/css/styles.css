@@ -109,18 +109,19 @@ h1, h2 {
 }
 #githubinfo .githubimg {
   margin-top: 5px;
-  min-width: 60px;
-  min-height: 90px;
-  max-width: 350px;
-  max-height: 400px;
+  min-width: 65px;
+  min-height: 100px;
+  max-width: 230px;
+  max-height: 260px;
   filter: blur(3px);
 }
 #githubinfo .workinprogress {
   margin-top: 5px;
-  min-width: 60px;
-  min-height: 90px;
-  max-width: 350px;
-  max-height: 400px;
+  min-width: 65px;
+  min-height: 100px;
+  max-width: 230px;
+  max-height: 290px;
+  margin-bottom: 5px;
 }
 #githubinfo .githubLink {
   font-size: 35px;
@@ -277,12 +278,12 @@ footer a {
     height: 150px;
   }
   #githubinfo .githubimg {
-    width: 60px;
-    height: 90px;
+    width: 65px;
+    height: 100px;
   }
   #githubinfo .workinprogress {
-    width: 60px;
-    height: 90px;
+    width: 65px;
+    height: 100px;
   }
 }
 
