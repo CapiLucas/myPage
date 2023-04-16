@@ -75,17 +75,6 @@ h1, h2 {
   box-shadow: 0px 0px 10px 7px white;
 }
 
-section {
-  text-align: center;
-}
-section h1 {
-  margin-top: 50px;
-}
-section span {
-  text-align: center;
-  color: white;
-}
-
 .imagenes {
   display: flex;
   flex-flow: row nowrap;
@@ -140,6 +129,12 @@ section span {
   justify-content: center;
   justify-items: center;
   align-items: center;
+}
+.info-section .info-space .info-content span, .info-section .info-space .info-content h1 {
+  color: white;
+}
+.info-section .info-space .info-content span {
+  font-weight: 600;
 }
 .info-section .info-space .me {
   margin-left: 25px;
