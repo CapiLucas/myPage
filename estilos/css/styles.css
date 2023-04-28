@@ -87,7 +87,6 @@ h1, h2 {
 }
 
 .imagenes {
-  margin-top: 20giapx;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-evenly;
@@ -134,7 +133,8 @@ h1, h2 {
 
 .info-section {
   width: 100%;
-  height: 500px;
+  height: 100%;
+  padding: 25px;
 }
 .info-section .info-space {
   width: 70vh;
@@ -156,7 +156,7 @@ h1, h2 {
 }
 .info-section .info-space .me {
   margin-left: 25px;
-  width: 350px;
+  width: 100%;
   border: 4px solid aqua;
 }
 .info-section .info-space .download-CV {
@@ -203,9 +203,6 @@ footer a {
   .principal img:hover {
     border: 3px solid white;
     box-shadow: 0px 0px 10px 7px white;
-  }
-  .info-section {
-    height: 600px;
   }
   .info-section .info-space {
     width: 45vh;
@@ -259,11 +256,8 @@ footer a {
     border: 3px solid white;
     box-shadow: 0px 0px 10px 7px white;
   }
-  .info-section {
-    height: 450px;
-  }
   .info-section .info-space {
-    width: 45vh;
+    width: 41vh;
     height: 55vh;
   }
   .info-section .info-space h1, .info-section .info-space span {
