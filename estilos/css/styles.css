@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: rgb(23, 23, 83);
+  background: linear-gradient(to bottom, rgb(2, 0, 40), rgb(2, 0, 65), rgb(2, 0, 65), rgb(2, 0, 40));
 }
 
 section h1 span {
